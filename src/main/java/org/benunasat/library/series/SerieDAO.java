@@ -25,6 +25,10 @@ public class SerieDAO {
     }
     public Serie create(Serie newSerie) {
         System.out.println("Creating new serie.....");
+        String query = "select s from Serie s";
+        TypedQuery<Serie> typedQuery = entityManager.createQuery(query, Serie.class);
+        System.out.println(typedQuery.getResultList());
+        return typedQuery.getResultList();
         return null;
     }
     public Serie update(Serie updatedSerie) {
