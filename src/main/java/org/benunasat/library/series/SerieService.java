@@ -8,10 +8,10 @@ import java.util.Optional;
 
 public class SerieService {
 
-    private final SerieDAO serieDAO;
+    private final SerieDAOImpl serieDAO;
 
     public SerieService() {
-        this.serieDAO = new SerieDAO(JPAConfig.getEntityManager());
+        this.serieDAO = new SerieDAOImpl(JPAConfig.getEntityManager());
     }
 
 

@@ -1,6 +1,5 @@
 package org.benunasat.library.books;
 
-import org.benunasat.library.authors.AuthorDAO;
 import org.benunasat.library.config.JPAConfig;
 import org.benunasat.library.enums.Genre;
 import org.benunasat.library.enums.Language;

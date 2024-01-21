@@ -7,10 +7,10 @@ import java.util.Optional;
 
 public class AuthorService {
 
-    private final AuthorDAO authorDAO;
+    private final AuthorDAOImpl authorDAO;
 
     public AuthorService() {
-        this.authorDAO = new AuthorDAO(JPAConfig.getEntityManager());
+        this.authorDAO = new AuthorDAOImpl(JPAConfig.getEntityManager());
     }
 
     public List<AuthorDTO> getAllAuthors() {
